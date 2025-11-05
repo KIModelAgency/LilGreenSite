@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'wouter';
 import { Instagram } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import heroImage from '@assets/generated_images/Colorful_healthy_food_bowl_hero_fffad8fd.png';
+import heroImage from '@assets/career/Colorful_healthy_food_bowl_hero_fffad8fd.png';
 
 export function Hero() {
   const { t } = useLanguage();

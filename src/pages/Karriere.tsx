@@ -1,6 +1,6 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { Briefcase, TrendingUp, Users, Handshake } from "lucide-react";
-import saladImage from "@assets/generated_images/Fresh_garden_salad_bowl_79601ace.png";
+import saladImage from "@assets/career/Fresh_garden_salad_bowl_79601ace.png";
 import teamImage from "@/assets/career/StarnbergSonne.jpeg";
 import growthImage from "@/assets/career/Kitchen.jpeg";
 import kitchenImage from "@/assets/career/Kitchen3.jpeg";
