@@ -1,0 +1,44 @@
+[
+  {
+    "id": "starnberg",
+    "city": "Starnberg",
+    "address": "Wittelsbacherstraße 6",
+    "zip": "82319",
+    "hours": [
+      { "day": "Montag", "dayEn": "Monday", "open": "08:30", "close": "18:30" },
+      { "day": "Dienstag", "dayEn": "Tuesday", "open": "08:30", "close": "18:30" },
+      { "day": "Mittwoch", "dayEn": "Wednesday", "open": "08:30", "close": "18:30" },
+      { "day": "Donnerstag", "dayEn": "Thursday", "open": "08:30", "close": "18:30" },
+      { "day": "Freitag", "dayEn": "Friday", "open": "08:30", "close": "18:30" },
+      { "day": "Samstag", "dayEn": "Saturday", "open": "10:00", "close": "16:00" },
+      { "day": "Sonntag", "dayEn": "Sunday", "open": "Geschlossen", "close": "" }
+    ],
+    "phone": "+49 8151 123456",
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Wittelsbacherstra%C3%9Fe+6%2C+82319+Starnberg",
+    "transport": "S-Bahn S6 bis Starnberg, 5 Min. zu Fuß",
+    "transportEn": "S-Bahn S6 to Starnberg, 5 min walk",
+    "parking": "Parkhaus am Bahnhof (2 Min. entfernt)",
+    "parkingEn": "Parking garage at train station (2 min away)"
+  },
+  {
+    "id": "berg",
+    "city": "Berg",
+    "address": "Aufkirchnerstraße 1",
+    "zip": "82335",
+    "hours": [
+      { "day": "Montag", "dayEn": "Monday", "open": "10:30", "close": "18:30" },
+      { "day": "Dienstag", "dayEn": "Tuesday", "open": "10:30", "close": "18:30" },
+      { "day": "Mittwoch", "dayEn": "Wednesday", "open": "10:30", "close": "18:30" },
+      { "day": "Donnerstag", "dayEn": "Thursday", "open": "10:30", "close": "18:30" },
+      { "day": "Freitag", "dayEn": "Friday", "open": "10:30", "close": "18:30" },
+      { "day": "Samstag", "dayEn": "Saturday", "open": "Geschlossen", "close": "" },
+      { "day": "Sonntag", "dayEn": "Sunday", "open": "Geschlossen", "close": "" }
+    ],
+    "phone": "+49 8151 789012",
+    "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Aufkirchnerstra%C3%9Fe+1%2C+82335+Berg",
+    "transport": "Bus 960 bis Berg Ortsmitte",
+    "transportEn": "Bus 960 to Berg Ortsmitte",
+    "parking": "Kostenlose Parkplätze vor Ort",
+    "parkingEn": "Free parking on-site"
+  }
+]

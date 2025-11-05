@@ -1,0 +1,173 @@
+{
+  "categories": [
+    {
+      "id": "bowls",
+      "name": "Bowls",
+      "nameEn": "Bowls"
+    },
+    {
+      "id": "salads",
+      "name": "Salate",
+      "nameEn": "Salads"
+    },
+    {
+      "id": "smoothies",
+      "name": "Smoothies",
+      "nameEn": "Smoothies"
+    },
+    {
+      "id": "bakery",
+      "name": "Bäckerei",
+      "nameEn": "Bakery"
+    },
+    {
+      "id": "coffee",
+      "name": "Kaffee & Getränke",
+      "nameEn": "Coffee & Drinks"
+    }
+  ],
+  "items": [
+    {
+      "id": "bowl-1",
+      "name": "Buddha Bowl",
+      "nameEn": "Buddha Bowl",
+      "description": "Quinoa, Süßkartoffel, Kichererbsen, Avocado, frisches Gemüse, Tahini-Dressing",
+      "descriptionEn": "Quinoa, sweet potato, chickpeas, avocado, fresh vegetables, tahini dressing",
+      "price": "12.90",
+      "category": "bowls",
+      "labels": ["vegan", "glutenfrei", "no-refined-sugar"]
+    },
+    {
+      "id": "bowl-2",
+      "name": "Rainbow Bowl",
+      "nameEn": "Rainbow Bowl",
+      "description": "Rotkohl, Karotten, Edamame, Brokkoli, Sesam, Ingwer-Miso-Dressing",
+      "descriptionEn": "Red cabbage, carrots, edamame, broccoli, sesame, ginger-miso dressing",
+      "price": "11.90",
+      "category": "bowls",
+      "labels": ["vegan", "no-refined-sugar"]
+    },
+    {
+      "id": "bowl-3",
+      "name": "Green Power Bowl",
+      "nameEn": "Green Power Bowl",
+      "description": "Spinat, Grünkohl, Gurke, Avocado, Hanfsamen, Zitrone-Kräuter-Dressing",
+      "descriptionEn": "Spinach, kale, cucumber, avocado, hemp seeds, lemon-herb dressing",
+      "price": "12.50",
+      "category": "bowls",
+      "labels": ["vegan", "glutenfrei", "no-refined-sugar"]
+    },
+    {
+      "id": "salad-1",
+      "name": "Caesar Salad",
+      "nameEn": "Caesar Salad",
+      "description": "Römersalat, geröstete Kichererbsen, Cherrytomaten, veganes Caesar-Dressing",
+      "descriptionEn": "Romaine lettuce, roasted chickpeas, cherry tomatoes, vegan caesar dressing",
+      "price": "10.90",
+      "category": "salads",
+      "labels": ["vegan", "no-refined-sugar"]
+    },
+    {
+      "id": "salad-2",
+      "name": "Mediterraner Salat",
+      "nameEn": "Mediterranean Salad",
+      "description": "Gemischter Salat, Oliven, Gurke, Paprika, Feta-Alternative, Balsamico",
+      "descriptionEn": "Mixed greens, olives, cucumber, bell pepper, feta alternative, balsamic",
+      "price": "11.50",
+      "category": "salads",
+      "labels": ["vegan", "glutenfrei", "no-refined-sugar"]
+    },
+    {
+      "id": "smoothie-1",
+      "name": "Green Goddess",
+      "nameEn": "Green Goddess",
+      "description": "Spinat, Banane, Mango, Kokoswasser, Spirulina",
+      "descriptionEn": "Spinach, banana, mango, coconut water, spirulina",
+      "price": "6.90",
+      "category": "smoothies",
+      "labels": ["vegan", "glutenfrei", "no-refined-sugar"]
+    },
+    {
+      "id": "smoothie-2",
+      "name": "Berry Boost",
+      "nameEn": "Berry Boost",
+      "description": "Beeren-Mix, Banane, Mandelmilch, Chiasamen",
+      "descriptionEn": "Mixed berries, banana, almond milk, chia seeds",
+      "price": "6.50",
+      "category": "smoothies",
+      "labels": ["vegan", "glutenfrei", "no-refined-sugar"]
+    },
+    {
+      "id": "smoothie-3",
+      "name": "Tropical Energy",
+      "nameEn": "Tropical Energy",
+      "description": "Ananas, Mango, Passionsfrucht, Kokosmilch",
+      "descriptionEn": "Pineapple, mango, passion fruit, coconut milk",
+      "price": "6.90",
+      "category": "smoothies",
+      "labels": ["vegan", "glutenfrei", "no-refined-sugar"]
+    },
+    {
+      "id": "bakery-1",
+      "name": "Vollkorn-Sauerteigbrot",
+      "nameEn": "Whole Grain Sourdough",
+      "description": "Frisch gebacken, mit Samen und Nüssen",
+      "descriptionEn": "Freshly baked, with seeds and nuts",
+      "price": "4.50",
+      "category": "bakery",
+      "labels": ["vegan", "no-refined-sugar"]
+    },
+    {
+      "id": "bakery-2",
+      "name": "Energy Balls",
+      "nameEn": "Energy Balls",
+      "description": "Datteln, Nüsse, Kakao, Kokosflocken (3 Stück)",
+      "descriptionEn": "Dates, nuts, cocoa, coconut flakes (3 pieces)",
+      "price": "5.50",
+      "category": "bakery",
+      "labels": ["vegan", "glutenfrei", "no-refined-sugar"]
+    },
+    {
+      "id": "coffee-1",
+      "name": "Bio-Filterkaffee",
+      "nameEn": "Organic Filter Coffee",
+      "description": "Regional geröstet, fair trade",
+      "descriptionEn": "Locally roasted, fair trade",
+      "price": "3.50",
+      "category": "coffee",
+      "labels": ["vegan", "no-refined-sugar"]
+    },
+    {
+      "id": "coffee-2",
+      "name": "Hafer-Cappuccino",
+      "nameEn": "Oat Cappuccino",
+      "description": "Mit Bio-Hafermilch",
+      "descriptionEn": "With organic oat milk",
+      "price": "4.20",
+      "category": "coffee",
+      "labels": ["vegan", "no-refined-sugar"]
+    },
+    {
+      "id": "coffee-3",
+      "name": "Matcha Latte",
+      "nameEn": "Matcha Latte",
+      "description": "Zeremonieller Matcha mit Pflanzenmilch",
+      "descriptionEn": "Ceremonial matcha with plant milk",
+      "price": "4.90",
+      "category": "coffee",
+      "labels": ["vegan", "glutenfrei", "no-refined-sugar"]
+    }
+  ],
+  "specials": [
+    {
+      "id": "special-1",
+      "name": "Wochenspecial: Herbst Bowl",
+      "nameEn": "Weekly Special: Autumn Bowl",
+      "description": "Gerösteter Kürbis, Linsen, Rucola, Walnüsse, Ahornsirup-Senf-Dressing",
+      "descriptionEn": "Roasted pumpkin, lentils, arugula, walnuts, maple-mustard dressing",
+      "price": "13.50",
+      "date": "Diese Woche",
+      "labels": ["vegan", "no-refined-sugar"]
+    }
+  ]
+}
