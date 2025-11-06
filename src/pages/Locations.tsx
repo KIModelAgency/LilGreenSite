@@ -172,8 +172,8 @@ export default function Locations() {
                         {/* Conditional Button: WhatsApp for Starnberg, None for Berg, Call for others */}
                         {location.city === 'Starnberg' ? (
                           <a
-                            // HINWEIS: Die Telefonnummer 49176XXXXXXX muss durch die tatsächliche Nummer ersetzt werden.
-                            href="https://wa.me/49176XXXXXXX?text=Hallo%2C%20ich%20möchte%20gerne%20eine%20Vorbestellung%20für%20Lil%20Green%20Kitchen%20Starnberg%20aufgeben."
+                            
+                            href="https://wa.me/4917650608974?text=Hallo%2C%20ich%20möchte%20gerne%20eine%20Vorbestellung%20für%20Lil%20Green%20Kitchen%20Starnberg%20aufgeben."
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex-1 min-w-[200px]"
