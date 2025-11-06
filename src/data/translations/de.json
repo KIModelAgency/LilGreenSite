@@ -14,8 +14,8 @@
     "aloha": "ALOHA. #MAKEYOUHEALTHY",
     "ctaMenu": "Speisekarte ansehen",
     "ctaLocations": "Standorte",
-    "ctaInstagram": "Auf Instagram ansehen",
-    "CareerButton": "Karriere entdecken"
+    "ctaInstagram": "Auf Instagram ansehen"
+    
   },
   "home": {
     "seasonalTitle": "Saisonale Highlights",
@@ -23,7 +23,8 @@
     "freshTitle": "Frisch & Regional",
     "freshDesc": "Sorgfältig ausgewählte Zutaten von lokalen Produzenten",
     "deliciousTitle": "Ohne raffinierten Zucker",
-    "deliciousDesc": "Natürlich süß, voller Geschmack"
+    "deliciousDesc": "Natürlich süß, voller Geschmack",
+"CareerButton": "Karriere entdecken"
   },
   "menu": {
     "title": "Unsere Speisekarte",
@@ -44,7 +45,7 @@
     "subtitle": "Besuche uns in Starnberg oder Berg",
     "hours": "Öffnungszeiten",
     "navigate": "Jetzt navigieren",
-    "call": "per Whatsapp vorbestellen",
+    "whatsapp": "per Whatsapp vorbestellen",
     "transport": "Anfahrt",
     "parking": "Parken"
   },

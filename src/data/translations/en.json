@@ -14,8 +14,8 @@
     "aloha": "ALOHA. #MAKEYOUHEALTHY",
     "ctaMenu": "View Menu",
     "ctaLocations": "Locations",
-    "ctaInstagram": "Follow on Instagram",
-    "careerButton": "Discover Careers"
+    "ctaInstagram": "Follow on Instagram"
+   
   },
   "home": {
     "seasonalTitle": "Seasonal Highlights",
@@ -23,7 +23,8 @@
     "freshTitle": "Fresh & Regional",
     "freshDesc": "Carefully selected ingredients from local producers",
     "deliciousTitle": "No Refined Sugar",
-    "deliciousDesc": "Naturally sweet, full of flavor"
+    "deliciousDesc": "Naturally sweet, full of flavor",
+"careerButton": "Discover Careers"
   },
   "menu": {
     "title": "Our Menu",
@@ -44,7 +45,7 @@
     "subtitle": "Visit us in Starnberg or Berg",
     "hours": "Opening Hours",
     "navigate": "Navigate",
-    "call": "Preorder via Whatsapp",
+    "whatsapp": "Preorder via Whatsapp",
     "transport": "Transport",
     "parking": "Parking"
   },
