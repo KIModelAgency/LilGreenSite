@@ -32,3 +32,5 @@
     </Button>
   </a>
 </div>
+
+export default Locations;
