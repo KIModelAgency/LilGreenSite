@@ -5,7 +5,7 @@
     "locations": "Standorte",
     "story": "Story",
     "catering": "Catering",
-  "career": "Karriere",
+    "career": "Karriere",
     "contact": "Kontakt"
   },
   "hero": {
@@ -14,7 +14,8 @@
     "aloha": "ALOHA. #MAKEYOUHEALTHY",
     "ctaMenu": "Speisekarte ansehen",
     "ctaLocations": "Standorte",
-    "ctaInstagram": "Auf Instagram ansehen"
+    "ctaInstagram": "Auf Instagram ansehen",
+    "careerButton": "Karriere entdecken"
   },
   "home": {
     "seasonalTitle": "Saisonale Highlights",
