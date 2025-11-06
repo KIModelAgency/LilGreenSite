@@ -5,8 +5,8 @@ import { MapPin, Phone, Clock, Bus, Car, Navigation } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import locationsData from '@/data/locations.json';
 import type { Location } from '@/shared/schema';
-import starnbergImg from "@/assets/locations/starnberg.png";
-import bergImg from "@/assets/locations/berg.png";
+import starnbergImg from "@/assets/locations/Starnberg.png";
+import bergImg from "@/assets/locations/Berg.png";
 
 const locations = locationsData as Location[];
 
