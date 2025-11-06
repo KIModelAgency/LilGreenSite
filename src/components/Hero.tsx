@@ -78,7 +78,7 @@ export function Hero() {
                   className="text-base px-8"
                   data-testid="button-hero-karriere"
                 >
-                  Karriere entdecken
+                  {t.home.careerButton}
                 </Button>
               </Link>
               <Link href="/locations">
