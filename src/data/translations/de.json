@@ -43,7 +43,7 @@
     "subtitle": "Besuche uns in Starnberg oder Berg",
     "hours": "Öffnungszeiten",
     "navigate": "Jetzt navigieren",
-    "call": "Anrufen",
+    "call": "per Whatsapp vorbestellen",
     "transport": "Anfahrt",
     "parking": "Parken"
   },
@@ -116,15 +116,13 @@
     "address": "Wittelsbacherstraße 6, 82319 Starnberg",
     "contact": "Kontakt",
     "email": "info@lilgreen.de",
-    "phone": "Telefon: +49 8151 123456",
-    "represented": "Vertreten durch",
+        "represented": "Vertreten durch",
     "management": "Geschäftsführung: Max Mustermann",
     "register": "Handelsregister",
     "registerEntry": "Eingetragen im Handelsregister",
     "court": "Registergericht: Amtsgericht München",
-    "registerNumber": "Registernummer: HRB 123456",
-    "vat": "Umsatzsteuer-ID",
-    "vatNumber": "USt-IdNr.: DE123456789"
+    "registerNumber": "Registernummer: HRB 256936",
+
   },
   "datenschutz": {
     "title": "Datenschutzerklärung",

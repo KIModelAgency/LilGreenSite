@@ -13,7 +13,7 @@
       { "day": "Samstag", "dayEn": "Saturday", "open": "10:00", "close": "16:00" },
       { "day": "Sonntag", "dayEn": "Sunday", "open": "Geschlossen", "close": "" }
     ],
-    "phone": "+49 8151 123456",
+    "phone": "+49 176 50608974",
     "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Wittelsbacherstra%C3%9Fe+6%2C+82319+Starnberg",
     "transport": "S-Bahn S6 bis Starnberg, 5 Min. zu Fuß",
     "transportEn": "S-Bahn S6 to Starnberg, 5 min walk",
@@ -34,7 +34,6 @@
       { "day": "Samstag", "dayEn": "Saturday", "open": "Geschlossen", "close": "" },
       { "day": "Sonntag", "dayEn": "Sunday", "open": "Geschlossen", "close": "" }
     ],
-    "phone": "+49 8151 789012",
     "gmapsUrl": "https://www.google.com/maps/search/?api=1&query=Aufkirchnerstra%C3%9Fe+1%2C+82335+Berg",
     "transport": "Bus 960 bis Berg Ortsmitte",
     "transportEn": "Bus 960 to Berg Ortsmitte",

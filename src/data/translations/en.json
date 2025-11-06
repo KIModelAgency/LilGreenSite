@@ -43,7 +43,7 @@
     "subtitle": "Visit us in Starnberg or Berg",
     "hours": "Opening Hours",
     "navigate": "Navigate",
-    "call": "Call",
+    "call": "Preorder via Whatsapp",
     "transport": "Transport",
     "parking": "Parking"
   },
@@ -116,16 +116,13 @@
     "address": "Wittelsbacherstraße 6, 82319 Starnberg, Germany",
     "contact": "Contact",
     "email": "info@lilgreen.de",
-    "phone": "Phone: +49 8151 123456",
     "represented": "Represented by",
-    "management": "Management: Max Mustermann",
+    "management": "Management: Marius Wussmann",
     "register": "Commercial Register",
     "registerEntry": "Registered in the commercial register",
     "court": "Registration court: District Court Munich",
-    "registerNumber": "Registration number: HRB 123456",
-    "vat": "VAT ID",
-    "vatNumber": "VAT ID: DE123456789"
-  },
+    "registerNumber": "Registration number: HRB 256936",
+   },
   "datenschutz": {
     "title": "Privacy Policy",
     "intro": "We take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with statutory data protection regulations and this privacy policy.",
