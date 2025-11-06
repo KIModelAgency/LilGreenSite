@@ -6,10 +6,10 @@ import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useLanguage } from '@/contexts/LanguageContext';
 import menuData from '@/data/menu.json';
 import type { MenuItem } from '@/shared/schema';
-import smoothieImage from '@assets/career/Fresh_green_smoothie_product_shot_8d9f0291.png';
-import saladImage from '@assets/career/Fresh_garden_salad_bowl_79601ace.png';
-import bakeryImage from '@assets/career/Healthy_artisan_bakery_selection_917dc92d.png';
-import bowlImage from '@assets/career/Colorful_healthy_food_bowl_hero_fffad8fd.png';
+import smoothieImage from '@/assets/menu/Fresh_green_smoothie_product_shot_8d9f0291.png';
+import saladImage from '@/assets/menu/Fresh_garden_salad_bowl_79601ace.png';
+import bakeryImage from '@/assets/menu/Healthy_artisan_bakery_selection_917dc92d.png';
+import bowlImage from '@/assets/menu/Colorful_healthy_food_bowl_hero_fffad8fd.png';
 
 const items = menuData.items as MenuItem[];
 const specials = menuData.specials;

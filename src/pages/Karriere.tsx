@@ -1,10 +1,10 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { Briefcase, TrendingUp, Users, Handshake } from "lucide-react";
-import saladImage from "@assets/career/Fresh_garden_salad_bowl_79601ace.png";
+import saladImage from "@/assets/career/Fresh_garden_salad_bowl_79601ace.png";
 import teamImage from "@/assets/career/StarnbergSonne.jpeg";
 import growthImage from "@/assets/career/Kitchen.jpeg";
 import kitchenImage from "@/assets/career/Kitchen3.jpeg";
-import mooswandImage from "@/assets/career/mooswand.png";
+import mossImage from "@/assets/career/mooswand.png";
 
 export default function Karriere() {
   const shouldReduceMotion = useReducedMotion();
@@ -96,21 +96,7 @@ export default function Karriere() {
     },
   ];
 
-  // Nur für die Bilder der Blöcke – Texte bleiben unangetastet
-  const getBlockImage = (index: number) => {
-    switch (index) {
-      case 0:
-        return teamImage;
-      case 1:
-        return growthImage;
-      case 2:
-        return kitchenImage;
-      case 3:
-        return mooswandImage; // z.B. nochmal Starnberg, kannst du auch anders wählen
-      default:
-        return saladImage;
-    }
-  };
+  const images = [teamImage, growthImage, kitchenImage, mossImage];
 
   return (
     <div className="min-h-screen pt-20">
@@ -165,51 +151,45 @@ export default function Karriere() {
       <section className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-20">
-            {blocks.map((block, index) => (
-              <motion.div
-                key={block.title}
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
-                  index % 2 === 1 ? "lg:flex-row-reverse" : ""
-                }`}
-                initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.6 }}
-              >
-                {/* Textseite */}
-                <div className={index % 2 === 1 ? "lg:col-start-2" : ""}>
-                  <div className="flex items-center gap-4 mb-6">
-                    <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <block.icon className="w-8 h-8 text-primary" />
-                    </div>
-                    <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground">
-                      {block.title}
-                    </h2>
-                  </div>
-                  <div className="text-lg text-muted-foreground leading-relaxed">
-                    {block.text}
-                  </div>
-                </div>
-
-                {/* Bildseite */}
-                <div
-                  className={
-                    index % 2 === 1
-                      ? "lg:col-start-1 lg:row-start-1 flex justify-center"
-                      : "flex justify-center"
-                  }
+            {blocks.map((block, index) => {
+              const image = images[index] ?? saladImage;
+              return (
+                <motion.div
+                  key={block.title}
+                  className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
+                    index % 2 === 1 ? "lg:flex-row-reverse" : ""
+                  }`}
+                  initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.6 }}
                 >
-                  <div className="rounded-2xl bg-muted overflow-hidden shadow-md flex justify-center">
-                    <img
-                      src={getBlockImage(index)}
-                      alt={block.title}
-                      className="max-h-[480px] w-auto object-cover rounded-2xl"
-                      loading="lazy"
-                    />
+                  <div className={index % 2 === 1 ? "lg:col-start-2" : ""}>
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <block.icon className="w-8 h-8 text-primary" />
+                      </div>
+                      <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground">
+                        {block.title}
+                      </h2>
+                    </div>
+                    <div className="text-lg text-muted-foreground leading-relaxed">
+                      {block.text}
+                    </div>
                   </div>
-                </div>
-              </motion.div>
-            ))}
+                  <div className={index % 2 === 1 ? "lg:col-start-1 lg:row-start-1" : ""}>
+                    <div className="rounded-2xl bg-muted overflow-hidden aspect-[4/3]">
+                      <img
+                        src={image}
+                        alt={block.title}
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </section>
