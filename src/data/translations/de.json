@@ -116,12 +116,12 @@
     "address": "Wittelsbacherstraße 6, 82319 Starnberg",
     "contact": "Kontakt",
     "email": "info@lilgreen.de",
-        "represented": "Vertreten durch",
+    "represented": "Vertreten durch",
     "management": "Geschäftsführung: Max Mustermann",
     "register": "Handelsregister",
     "registerEntry": "Eingetragen im Handelsregister",
     "court": "Registergericht: Amtsgericht München",
-    "registerNumber": "Registernummer: HRB 256936",
+    "registerNumber": "Registernummer: HRB 256936"
 
   },
   "datenschutz": {

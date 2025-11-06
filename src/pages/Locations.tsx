@@ -207,4 +207,14 @@ export default function Locations() {
                         )}
                       </div>
 
-
+</CardContent>
+                  </Card>
+                </motion.div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
