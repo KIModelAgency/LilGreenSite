@@ -1,8 +1,6 @@
-// api/contact.ts (Projekt-Root, nicht in /src)
+// api/contact.ts (root, nicht in src)
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { Resend } from 'resend';
-
-const resend = new Resend(process.env.RESEND_API_KEY);
+import nodemailer from 'nodemailer';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'POST') {
@@ -10,47 +8,45 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
-    const { name, email, subject, message } = req.body as {
-      name: string;
-      email: string;
-      subject?: string;
-      message: string;
-    };
+    const { name, email, subject, message } = req.body;
 
-    if (!name?.trim() || !email?.trim() || !message?.trim()) {
-      return res.status(400).json({ success: false, message: 'Missing fields.' });
+    if (!name || !email || !message) {
+      return res.status(400).json({ success: false, message: 'Missing fields' });
     }
 
-    const mailSubject =
-      subject && subject.trim()
-        ? `[Kontaktformular] ${subject.trim()}`
-        : 'Neue Kontaktanfrage über lilgreen.de';
+    const transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST,       // smtp.strato.de
+      port: Number(process.env.SMTP_PORT || 587),
+      secure: false,                     // wichtig! Strato nutzt STARTTLS, nicht SSL
+      auth: {
+        user: process.env.SMTP_USER,     // info@lilgreen.de
+        pass: process.env.SMTP_PASS      // dein Passwort
+      }
+    });
 
-    const to = process.env.CONTACT_TO || 'info@lilgreen.de';
-    const from = process.env.CONTACT_FROM || 'Lil Green Kitchen <no-reply@lilgreen.de>';
-
-    await resend.emails.send({
-      from,                // Absender (Domain muss in Resend verifiziert sein)
-      to,                  // Empfänger
-      reply_to: email,     // Antworten gehen an den Absender aus dem Formular
-      subject: mailSubject,
+    await transporter.sendMail({
+      from: `"Lil Green Kitchen" <${process.env.SMTP_USER}>`,
+      to: process.env.SMTP_USER,         // Mail an dich selbst
+      replyTo: email,
+      subject: subject || 'Neue Kontaktanfrage über lilgreen.de',
+      text: `
+Name: ${name}
+E-Mail: ${email}
+Nachricht:
+${message}
+      `,
       html: `
         <h2>Neue Kontaktanfrage</h2>
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>E-Mail:</strong> ${email}</p>
         <p><strong>Betreff:</strong> ${subject || '-'}</p>
-        <p><strong>Nachricht:</strong><br>${(message || '').replace(/\n/g, '<br>')}</p>
-      `,
-      text: `Name: ${name}
-E-Mail: ${email}
-Betreff: ${subject || '-'}
-Nachricht:
-${message || ''}`,
+        <p><strong>Nachricht:</strong><br>${message.replace(/\n/g, '<br>')}</p>
+      `
     });
 
-    return res.status(200).json({ success: true, message: 'Mail sent', id: 'ok' });
+    return res.status(200).json({ success: true, message: 'Mail sent' });
   } catch (err: any) {
-    console.error('Kontakt-Fehler:', err);
-    return res.status(500).json({ success: false, message: err?.message || 'Fehler beim Mailversand' });
+    console.error('Mail error:', err);
+    return res.status(500).json({ success: false, message: 'Server error' });
   }
 }
