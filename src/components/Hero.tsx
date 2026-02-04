@@ -68,20 +68,22 @@ export function Hero() {
             </motion.p>
 
             <motion.div
-              className="flex flex-wrap gap-4"
-              initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.9 }}
-            >
-              <Link href="/karriere">
-                <Button
-                  size="lg"
-                  className="text-base px-8"
-                  data-testid="button-hero-karriere"
-                >
-                  {t.home.careerButton}
-                </Button>
-              </Link>
+  className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-3xl"
+  initial={{ opacity: 0, y: shouldReduceMotion ? 0 : 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 0.9 }}
+>
+
+              <Link href="/karriere" className="block w-full">
+  <Button
+    size="lg"
+    className="w-full h-12 text-base justify-center"
+    data-testid="button-hero-karriere"
+  >
+    {t.home.careerButton}
+  </Button>
+</Link>
+
               <WhatsAppPreorderButton
   label="Vorbestellen"
   testId="button-hero-preorder"
@@ -91,13 +93,15 @@ export function Hero() {
                 href="https://www.instagram.com/lil_green_kitchen"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="block w-full"
               >
                 <Button
-                  size="lg"
-                  variant="outline"
-                  className="text-base px-8 bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20"
-                  data-testid="button-hero-instagram"
-                >
+  size="lg"
+  variant="outline"
+  className="w-full h-12 text-base justify-center bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20"
+  data-testid="button-hero-instagram"
+>
+
                   <Instagram className="w-5 h-5 mr-2" />
                   {t.hero.ctaInstagram}
                 </Button>
