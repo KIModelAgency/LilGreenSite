@@ -36,30 +36,31 @@ export default function Contact() {
   });
 
   const onSubmit = async (data: InsertContactMessage) => {
-    try {
-      const response = await apiRequest<{ success: boolean; message: string; id: string }>(
-        'POST',
-        '/api/contact',
-        data
-      );
-      
-      if (response.success) {
-        setIsSubmitted(true);
-        form.reset();
-        
-        setTimeout(() => {
-          setIsSubmitted(false);
-        }, 5000);
-      } else {
-        throw new Error(response.message);
-      }
-    } catch (error) {
-      toast({
-        title: t.contact.error,
-        variant: 'destructive',
-      });
+  try {
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+
+    const response = (await res.json()) as { success: boolean; message?: string; id?: string };
+
+    if (!res.ok || !response.success) {
+      throw new Error(response.message || `HTTP ${res.status}`);
     }
-  };
+
+    setIsSubmitted(true);
+    form.reset();
+
+    setTimeout(() => setIsSubmitted(false), 5000);
+  } catch (error) {
+    toast({
+      title: t.contact.error,
+      variant: 'destructive',
+    });
+  }
+};
+
 
   const faqs = [
     { q: t.contact.faq1Q, a: t.contact.faq1A },

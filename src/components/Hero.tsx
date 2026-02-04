@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'wouter';
 import { Instagram } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { WhatsAppPreorderButton } from "@/components/WhatsAppPreorderButton";
 import heroImage from '@/assets/career/Colorful_healthy_food_bowl_hero_fffad8fd.png';
 
 export function Hero() {
@@ -81,16 +82,11 @@ export function Hero() {
                   {t.home.careerButton}
                 </Button>
               </Link>
-              <Link href="/locations">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="text-base px-8 bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20"
-                  data-testid="button-hero-locations"
-                >
-                  {t.hero.ctaLocations}
-                </Button>
-              </Link>
+              <WhatsAppPreorderButton
+  label="Vorbestellen"
+  testId="button-hero-preorder"
+/>
+
               <a
                 href="https://www.instagram.com/lil_green_kitchen"
                 target="_blank"
