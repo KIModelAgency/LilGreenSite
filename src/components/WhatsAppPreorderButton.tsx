@@ -6,13 +6,11 @@ const WHATSAPP_PREORDER_URL =
 
 export function WhatsAppPreorderButton({
   className = "",
-  fullWidth = true,
   variant = "outline",
   label = "Vorbestellen",
   testId = "button-whatsapp-preorder",
 }: {
   className?: string;
-  fullWidth?: boolean;
   variant?: "default" | "outline";
   label?: string;
   testId?: string;
@@ -22,13 +20,11 @@ export function WhatsAppPreorderButton({
       href={WHATSAPP_PREORDER_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className={fullWidth ? `flex-1 min-w-[200px] ${className}` : className}
+      className={`w-full ${className}`}
     >
       <Button
         variant={variant}
-        className={`${
-          fullWidth ? "w-full" : ""
-        } bg-green-500 hover:bg-green-600 text-white border-green-500 hover:border-green-600`}
+        className="w-full bg-green-500 hover:bg-green-600 text-white border-green-500 hover:border-green-600"
         data-testid={testId}
       >
         <FaWhatsapp className="w-4 h-4 mr-2" />
